@@ -61,5 +61,6 @@ def analyze_image():
 
 
 if __name__ == "__main__":
-    # listen on all interfaces, port 5000
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    port = int(os.environ.get("PORT", 5000))  # ✅ Use PORT from environment for platforms like Render
+    app.run(host="0.0.0.0", port=port, debug=True)
+
