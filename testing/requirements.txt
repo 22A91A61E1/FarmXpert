@@ -4,3 +4,4 @@ flask-cors
 opencv-python
 Pillow
 numpy
+google-generativeai
